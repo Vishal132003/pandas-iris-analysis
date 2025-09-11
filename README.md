@@ -1,59 +1,48 @@
-# numpy-in-plain-sight
+# Pandas Basics
 
-This is how I learned NumPy — not from tutorials, not from AI, not from “ultimate guides”.
-
-Just me, a terminal, and three small projects that built on each other.
-
-No magic. No pretending I knew it all. Just code that works, comments that make sense, and mistakes I left in so Future Me remembers how I got here.
+This repo is my personal **cheat sheet + practice code** for learning **Pandas**.  
+I already knew NumPy, so this is the next step for data analysis.  
 
 ---
 
-## What’s inside
+## 📖 What I Covered
 
-This repo contains three self-contained projects:
+### 1. Core Data Structures
+- **Series** → 1D labeled array  
+- **DataFrame** → 2D table with rows & columns  
 
-### 1. [`just-numpy`](./just-numpy/)  
-The absolute basics:  
-→ Creating arrays  
-→ Shape, dtype, indexing  
-→ Math, stats, reshaping  
-→ If you’re starting from zero — start here.
+### 2. Reading & Writing Data
+- "read_csv", "to_csv"  
+- Can also work with Excel, JSON, SQL (later)
 
-### 2. [`just-numpy-advanced`](./just-numpy-advanced/)  
-Where NumPy starts to feel powerful:  
-→ Boolean and fancy indexing  
-→ Broadcasting (yes, I finally get it)  
-→ UFuncs, stacking, random, matrix math  
-→ The stuff you keep Googling — now in one place.
+### 3. Inspecting Data
+- "head()", "tail()"
+- "info()", "describe()"  
 
-### 3. [`just-numpy-data`](./just-numpy-data/)  
-Real data, real mess:  
-→ Loading CSVs with `genfromtxt`  
-→ Handling NaNs, filtering rows, saving cleaned data  
-→ Stats, correlations, conditions  
-→ And a gentle reminder: sometimes, just use pandas.
+### 4. Selecting Data
+- Column selection  
+- "iloc" (by index)  
+- "loc" (by labels)  
 
----
+### 5. Filtering
+- Boolean conditions  
+- Multiple conditions with "&" and "|"  
 
-## Why this exists
+### 6. Common Operations
+- Mean, min, max, sort  
+- Value counts  
+- Quick stats  
 
-I kept forgetting syntax.  
-I kept getting stuck on “why does this work?”  
-I didn’t want perfect code — I wanted code that *explained itself*.
+### 7. Grouping & Aggregation
+- "groupby" + aggregation functions  
 
-So I wrote this for me.  
-If it helps you too — cool.  
-If not — no pressure.
+### 8. Missing Data
+- "fillna", "dropna"
 
 ---
 
-## How to use
+## ▶️ How to Run
 
-Each folder is independent.
+Install pandas:
 
-1. Go into any project folder (`just-numpy`, etc.)
-2. Make sure you have Python 3.7+
-3. Install dependencies:
-
-
-pip install -r requirements.txt
+pip install pandas
