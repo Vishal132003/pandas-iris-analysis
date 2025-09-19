@@ -7,7 +7,7 @@ I already knew NumPy, so this is the next step for data analysis.
 
 ## 📖 What I Covered
 
-### 1. Core Data Structures
+### 1. Core Data Structurer
 - **Series** → 1D labeled array  
 - **DataFrame** → 2D table with rows & columns  
 
